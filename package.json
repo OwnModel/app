@@ -1,7 +1,7 @@
 {
-  "name": "OwnModel",
+  "name": "ownmodel",
   "version": "0.2.1",
-  "description": "The best solution for turning private documents into a chat bot using off-the-shelf tools and commercially viable AI technologies.",
+  "description": "Your personal AI Agent that knows you.",
   "main": "index.js",
   "type": "module",
   "author": "OwnModel",
