@@ -24,7 +24,7 @@ const {
   ROLES,
 } = require("../utils/middleware/multiUserProtected");
 const { validatedRequest } = require("../utils/middleware/validatedRequest");
-const ImportedPlugin = require("../utils/agents/imported");
+const ImportedPlugin = require("../utils/agents - next feature/imported");
 
 function adminEndpoints(app) {
   if (!app) return;

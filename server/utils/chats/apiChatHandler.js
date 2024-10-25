@@ -7,7 +7,7 @@ const { chatPrompt, sourceIdentifier, recentChatHistory } = require("./index");
 const {
   EphemeralAgentHandler,
   EphemeralEventListener,
-} = require("../agents/ephemeral");
+} = require("../agents - next feature/ephemeral");
 const { Telemetry } = require("../../models/telemetry");
 
 /**
