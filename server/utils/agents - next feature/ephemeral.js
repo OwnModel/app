@@ -1,18 +1,18 @@
-const AIbitat = require("./aibitat");
-const AgentPlugins = require("./aibitat/plugins");
-const ImportedPlugin = require("./imported");
+const AIbitat = require("./aibitat/index.js");
+const AgentPlugins = require("./aibitat/plugins/index.js");
+const ImportedPlugin = require("./imported.js");
 const { httpSocket } = require("./aibitat/plugins/http-socket.js");
-const { WorkspaceChats } = require("../../models/workspaceChats");
-const { safeJsonParse } = require("../http");
+const { WorkspaceChats } = require("../../models/workspaceChats.js");
+const { safeJsonParse } = require("../http/index.js");
 const {
   USER_AGENT,
   WORKSPACE_AGENT,
   agentSkillsFromSystemSettings,
-} = require("./defaults");
-const { AgentHandler } = require(".");
+} = require("./defaults.js");
+const { AgentHandler } = require("./index.js");
 const {
   WorkspaceAgentInvocation,
-} = require("../../models/workspaceAgentInvocation");
+} = require("../../models/workspaceAgentInvocation.js");
 
 /**
  * This is an instance and functional Agent handler, but it does not utilize
@@ -279,7 +279,7 @@ class EphemeralAgentHandler extends AgentHandler {
 }
 
 const EventEmitter = require("node:events");
-const { writeResponseChunk } = require("../helpers/chat/responses");
+const { writeResponseChunk } = require("../helpers/chat/responses.js");
 
 /**
  * This is a special EventEmitter specifically used in the Aibitat agent handler
